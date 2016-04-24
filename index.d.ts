@@ -43,7 +43,7 @@ declare namespace ReactRelay {
 
     }
     export function QL(...params: Array<any>): QLExpression;
-    interface RouteQueries { [queryName: string]: (component?: any) => QLExpression }
+    interface RouteQueries { [queryName: string]: (component?: any) => QLExpression; }
 
     export class Route {
         static paramDefinitions: { [param: string]: { required: boolean } };
@@ -52,7 +52,7 @@ declare namespace ReactRelay {
         constructor(params?: { [param: string]: any });
     }
     interface QueryFragments {
-        [propName: string]: (variables: { [name: string]: any }) => QLExpression
+        [propName: string]: (variables: { [name: string]: any }) => QLExpression;
     }
 
     interface ContainerConfig {
