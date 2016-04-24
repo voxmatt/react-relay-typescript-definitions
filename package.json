@@ -1,20 +1,25 @@
 {
-  "name": "react-relay-typescript-definition",
-  "version": "0.1",
-  "description": "TypeScript definitions for Facebook React-Relay",
-  "files": ["reactRelay.d.ts", "LICENSE", "README.md"],
-  "keywords": ["react", "reactjs", "react-relay", "relay", "typescript"],
-  "homepage": "https://github.com/voxmatt/react-relay-typescript-definitions",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/voxmatt/react-relay-typescript-definitions.git"
+  "private": true,
+  "scripts": {
+    "build": "echo building... && typings bundle --ambient -o out",
+    "lint": "echo linting... && tslint \"**/*.ts\" -e \"source/**\" -e \"source-test/**\" -e \"out/**\" -e \"node_modules/**\" -e \"typings/**\"",
+    "test": "echo testing... && cd test && ts-node ../node_modules/blue-tape/bin/blue-tape \"**/*.ts\" | tap-spec",
+    "source-test": "echo source-testing... &&  echo source-test is not specified",
+    "watch": "onchange \"**/*.ts\" -i -e \"out/**\" -- npm -s run build+test",
+    "publish": "npm -s run lint+build+test && echo please publish to typings/registry",
+    "source-test+test": "npm run source-test && npm test",
+    "build+test": "npm run build && npm run source-test+test",
+    "lint+build+test": "npm run lint && npm run build+test",
+    "prepublish": "typings install"
   },
-  "bugs": {
-    "url": "https://github.com/voxmatt/react-relay-typescript-definitions/issues"
-  },
-  "author": {
-    "name": "Matt Martin",
-    "url": "https://mattmart.in/"
-  },
-  "license": "MIT"
+  "devDependencies": {
+    "blue-tape": "^0.2.0",
+    "onchange": "^2.2.0",
+    "tap-spec": "^4.1.1",
+    "ts-node": "^0.7.1",
+    "tslint": "^3.7.0",
+    "tslint-config-typings": "^0.2.0",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.11"
+  }
 }
