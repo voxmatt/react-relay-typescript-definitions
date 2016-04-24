@@ -130,5 +130,5 @@ declare namespace ReactRelay {
     export function createContainer(Component: __React.ComponentClass<any>, ContainerConfig: ContainerConfig): any;
     export function injectNetworkLayer(networkLayer: NetworkLayer): any;
     export function injectTaskScheduler(scheduler: any): any;
-    export function isContainer(Component): any;
+    export function isContainer(Component: any): any;
 }
