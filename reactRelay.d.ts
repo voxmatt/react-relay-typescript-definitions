@@ -1,4 +1,5 @@
-///<reference path="../react/index.d.ts" />
+///<reference path="./typings/main/ambient/react/index.d.ts" />
+///<reference path="./typings/main/ambient/es6-promise/index.d.ts" />
 
 declare module 'react-relay' {
     export = ReactRelay
