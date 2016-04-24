@@ -5,7 +5,9 @@
     "email": "oleksandr+react-d-ts@tvori.info",
     "url": "http://mattmart.in/"
   },
-  "version": "0.1.2",
+  "description": "Typescript defintions for React-Relay",
+  "keywords": ["react", "reactjs", "relay", "react-relay", "typescript"],
+  "version": "0.1.3",
   "homepage": "https://github.com/react-relay-typescript-definitions",
   "repository": {
     "type": "git",
