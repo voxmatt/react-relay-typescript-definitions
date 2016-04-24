@@ -1,0 +1,20 @@
+{
+  "name": "react-relay-typescript-definition",
+  "version": "0.1",
+  "description": "TypeScript definitions for Facebook React-Relay",
+  "files": ["reactRelay.d.ts", "LICENSE", "README.md"],
+  "keywords": ["react", "reactjs", "react-relay", "relay", "typescript"],
+  "homepage": "https://github.com/voxmatt/react-relay-typescript-definitions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voxmatt/react-relay-typescript-definitions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/voxmatt/react-relay-typescript-definitions/issues"
+  },
+  "author": {
+    "name": "Matt Martin",
+    "url": "https://mattmart.in/"
+  },
+  "license": "MIT"
+}
