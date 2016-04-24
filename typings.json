@@ -1,0 +1,12 @@
+{
+  "name": "react-relay-typescript-definitions",
+  "main": "index.d.ts",
+  "homepage": "https://github.com/voxmatt/react-relay-typescript-definitions",
+  "version": "",
+  "devDependencies": {
+    "blue-tape": "registry:npm/blue-tape#0.1.0+20160322235613"
+  },
+  "ambientDevDependencies": {
+    "node": "registry:dt/node#4.0.0+20160319033040"
+  }
+}
