@@ -13,7 +13,7 @@
     "react-relay",
     "typescript"
   ],
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/react-relay-typescript-definitions",
   "repository": {
     "type": "git",
