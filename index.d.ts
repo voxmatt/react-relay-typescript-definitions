@@ -2,7 +2,7 @@
 ///<reference path="./typings/main/definitions/es6-promise/index.d.ts" />
 
 declare module 'react-relay' {
-    export = ReactRelay
+    export = ReactRelay;
 }
 declare namespace ReactRelay {
     interface MutationRequest {
