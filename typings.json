@@ -3,14 +3,14 @@
   "main": "index.d.ts",
   "homepage": "https://github.com/voxmatt/react-relay-typescript-definitions",
   "version": "0.1.2",
-  "peerDependencies": {
-    "es6-promise": "registry:dt/es6-promise#0.0.0+20160423074304",
-    "react": "registry:dt/react#0.14.0+20160423065914"
-  },
   "devDependencies": {
-    "blue-tape": "registry:npm/blue-tape#0.1.0+20160322235613"
+    "blue-tape": "registry:npm/blue-tape#0.2.0+20160623043621"
   },
-  "ambientDevDependencies": {
-    "node": "registry:dt/node#4.0.0+20160319033040"
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20160621231320"
+  },
+  "peerDependencies": {
+    "es6-promise": "registry:npm/es6-promise#3.0.0+20160211003958",
+    "react": "registry:npm/react#15.0.1+20160601175240"
   }
 }
