@@ -23,7 +23,7 @@
     "url": "https://github.com/react-relay-typescript-definitions/issues"
   },
   "scripts": {
-    "build": "echo building... && typings bundle --ambient -o out",
+    "build": "echo building... && typings bundle --global -o out",
     "lint": "echo linting... && tslint \"**/*.ts\" -e \"source/**\" -e \"source-test/**\" -e \"out/**\" -e \"node_modules/**\" -e \"typings/**\"",
     "watch": "onchange \"**/*.ts\" -i -e \"out/**\" -- npm -s run build+test",
     "publish": "npm -s run lint+build && echo please publish to typings/registry",
