@@ -1,8 +1,8 @@
-import * as __React from 'react';
-import { Promise } from 'es6-promise';
+///<reference path="./typings/main/definitions/react/index.d.ts" />
+///<reference path="./typings/main/definitions/es6-promise/index.d.ts" />
 
 declare module 'react-relay' {
-    export = ReactRelay;
+    export = ReactRelay
 }
 declare namespace ReactRelay {
     interface MutationRequest {
@@ -70,11 +70,11 @@ declare namespace ReactRelay {
     type RelayMutationFragments = {
         [index: string]: FragmentBuilder;
     };
-    export class Mutation<T, S> {
-        props: T;
-        constructor(props?: T);
+    export class Mutation {
+        constructor(props?: any);
+        props: any;
         static fragments: MutationFragments;
-        static getFragment(q: string): string;
+        static getFragment(q: string): string
     }
 
     class NetworkLayer {
